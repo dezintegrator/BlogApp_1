@@ -1,0 +1,12 @@
+
+<div class="container">
+<br>
+	<%= form_for @post do |f| %>
+		<%= f.label :title %><br>
+		<%= f.text_field :title , :class => "title-post"%></br>
+		<%= f.label :text %><br>
+		<%= f.text_area :body , :class => "body-post"%><br>
+		<br>
+		<%= f.submit 'Submit', :class => 'btn btn-info' %>
+	<% end %>
+</div>
